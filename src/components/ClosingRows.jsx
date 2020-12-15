@@ -1,5 +1,6 @@
 import React from "react";
 import { TableCell, TableRow } from "@baltimorecounty/dotgov-components";
+import ClosingIcon from "./ClosingIcon";
 
 const ClosingRows = (props) => {
   const { data } = props;
@@ -7,10 +8,7 @@ const ClosingRows = (props) => {
   return data.map((item) => (
     <TableRow>
       <TableCell>
-        <i
-          className="fa fa-exclamation-triangle fa-2x icon-small icon-inline icon-modified"
-          aria-hidden="true"
-        ></i>
+        <ClosingIcon type={item.status} size="small" />
       </TableCell>
       <TableCell>{item.status}</TableCell>
       <TableCell>
