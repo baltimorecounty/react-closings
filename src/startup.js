@@ -2,7 +2,7 @@ import { Config } from "@baltimorecounty/javascript-utilities";
 
 const { setConfig } = Config;
 
-const apiPath = "/api/hub/structuredContent/closings?recordsPerPage=1000";
+const apiPath = "/api/hub/structuredContent/weather?recordsPerPage=1000";
 const testApiRoot = `https://testservices.baltimorecountymd.gov${apiPath}`;
 const prodApiRoot = `https://services.baltimorecountymd.gov${apiPath}`;
 
