@@ -1,14 +1,17 @@
 import React, { useEffect } from "react";
 import useClosings from "../hooks/useClosings";
+import { Table, TableBody } from "@baltimorecounty/dotgov-components";
+import ClosingHeaders from "./ClosingHeaders";
+import ClosingRows from "./ClosingRows";
 
 const ClosingTable = (props) => {
-  const [{ department = [], hasError, isLoading }] = useClosings();
+  const [{ closings = [], hasError, isLoading }] = useClosings();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   });
 
-  const { records = [] } = department;
+  const { records = [] } = closings;
 
   if (hasError) {
     return (
@@ -25,7 +28,12 @@ const ClosingTable = (props) => {
       {isLoading ? (
         <p>{`Loading Closing Information...`}</p>
       ) : (
-        "This is a work in progress"
+        <Table id="responsive-main-table" className="display">
+          <ClosingHeaders />
+          <TableBody>
+            <ClosingRows data={records} />
+          </TableBody>
+        </Table>
       )}
     </div>
   );
