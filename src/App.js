@@ -1,12 +1,12 @@
 import "@baltimorecounty/dotgov-components/lib/styles/dotgov.min.css";
 import React from "react";
 import { Run } from "./startup";
-import ClosingTable from "./components/ClosingTable";
+import ClosingsPage from "./components/ClosingsPage";
 
 Run();
 
 function App(props) {
-  return <ClosingTable />;
+  return <ClosingsPage />;
 }
 
 export default App;

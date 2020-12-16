@@ -30,7 +30,7 @@ const ClosingIcon = (props) => {
 
   return (
     <i
-      class={`fa ${iconClasses.icon[newType]} ${iconClasses.size[size]} icon-inline icon-${newType}`}
+      className={`fa ${iconClasses.icon[newType]} ${iconClasses.size[size]} icon-inline icon-${newType}`}
     ></i>
   );
 };
