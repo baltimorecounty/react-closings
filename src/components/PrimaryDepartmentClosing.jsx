@@ -4,7 +4,13 @@ import ClosingIcon from "./ClosingIcon";
 const PrimaryDepartmentClosing = (props) => {
   const { data } = props;
 
-  const todaysDate = new Date().toLocaleDateString();
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  const todaysDate = new Date().toLocaleDateString(undefined, options);
 
   const primaryRecord = data.filter(
     ({ name }) => name === "Baltimore County Government"
