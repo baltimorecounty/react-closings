@@ -5,7 +5,7 @@ import ClosingsPage from "./components/ClosingsPage";
 
 Run();
 
-function App(props) {
+function App() {
   return <ClosingsPage />;
 }
 
