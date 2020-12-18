@@ -5,10 +5,15 @@ import ClosingsTable from "./ClosingTable";
 import ClosingHeaders from "./ClosingHeaders";
 import ClosingRows from "./ClosingRows";
 import ClosingsSideBar from "./ClosingsSideBar";
+import ReactHtmlParser from "react-html-parser";
 
 const ClosingsPage = (props) => {
   const [{ closings = [], hasError, isLoading }] = useClosings();
-
+  const {
+    programHeader,
+    informationHeader,
+    informationAbout,
+  } = window.closings;
   useEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -34,6 +39,9 @@ const ClosingsPage = (props) => {
             ) : (
               <div id="dg_main-content">
                 <PrimaryDepartmentClosing data={records} />
+                {ReactHtmlParser(informationHeader)}
+                {ReactHtmlParser(informationAbout)}
+                {ReactHtmlParser(programHeader)}
                 <ClosingsTable id="responsive-main-table" className="display">
                   <ClosingHeaders />
                   <ClosingRows data={records} />
