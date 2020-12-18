@@ -49,7 +49,7 @@ const departmentSidebar = () => {
   return (
     <div className="dg_sidebar">
       <SideBarSection title="Related Links">
-        <ul class="dg_alt-list">
+        <ul className="dg_alt-list">
           <li>
             <a href="/News/weather/policies.html">
               Severe Weather and Closings Policies
