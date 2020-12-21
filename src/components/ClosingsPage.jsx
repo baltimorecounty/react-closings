@@ -6,6 +6,7 @@ import ClosingHeaders from "./ClosingHeaders";
 import ClosingRows from "./ClosingRows";
 import ClosingsSideBar from "./ClosingsSideBar";
 import ReactHtmlParser from "react-html-parser";
+import { TableBody } from "@baltimorecounty/dotgov-components";
 
 const ClosingsPage = (props) => {
   const [{ closings = [], hasError, isLoading }] = useClosings();
@@ -44,7 +45,9 @@ const ClosingsPage = (props) => {
                 {ReactHtmlParser(programHeader)}
                 <ClosingsTable id="responsive-main-table" className="display">
                   <ClosingHeaders />
-                  <ClosingRows data={records} />
+                  <TableBody>
+                    <ClosingRows data={records} />
+                  </TableBody>
                 </ClosingsTable>
               </div>
             )}
