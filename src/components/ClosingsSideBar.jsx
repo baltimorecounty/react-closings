@@ -49,18 +49,20 @@ const departmentSidebar = () => {
   return (
     <div className="dg_sidebar">
       <SideBarSection title="Related Links">
-        <ul className="dg_alt-list">
-          <li>
-            <a href="/News/weather/policies.html">
-              Severe Weather and Closings Policies
-            </a>
-          </li>
-          <li>
-            <a href="News/weather/inclementweather.html">
-              Employee Inclement Weather Policy
-            </a>
-          </li>
-        </ul>
+        <div class="dg_sidebar__content">
+          <ul classname="dg_alt-list">
+            <li>
+              <a href="/News/weather/policies.html">
+                Severe Weather and Closings Policies
+              </a>
+            </li>
+            <li>
+              <a href="News/weather/inclementweather.html">
+                Employee Inclement Weather Policy
+              </a>
+            </li>
+          </ul>
+        </div>
       </SideBarSection>
       <SideBarSection title="BALTCO 311">{sideBarContactUs}</SideBarSection>
       <SideBarSection title="Follow Us">{sideBarSocialMedia}</SideBarSection>

@@ -16,13 +16,10 @@ const PrimaryDepartmentClosing = (props) => {
     ({ name }) => name === "Baltimore County Government"
   );
 
-  return (
+  return data.length > 0 ? (
     <div className="closing-callout hero-unit">
       <div className="container-fluid">
-        <div className="row">
-          <div className="county-closings-image-container col-md-3 col-sm-3 col-md-push-9 col-sm-push-9">
-            <ClosingIcon type={primaryRecord[0].status} size="extraLarge" />
-          </div>
+        <div className="row align-items-center">
           <div className="col-md-9 col-sm-9 col-md-pull-3 col-sm-pull-3">
             <h2>{primaryRecord[0].name}</h2>
             <div className="county-closings-status-container">
@@ -36,9 +33,14 @@ const PrimaryDepartmentClosing = (props) => {
               <p>{primaryRecord[0].information}</p>
             </div>
           </div>
+          <div className="county-closings-image-container col-md-3 col-sm-3 col-md-push-9 col-sm-push-9">
+            <ClosingIcon type={primaryRecord[0].status} size="large" />
+          </div>
         </div>
       </div>
     </div>
+  ) : (
+    <div>Something Went Wrong</div>
   );
 };
 
