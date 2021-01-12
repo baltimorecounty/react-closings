@@ -10,7 +10,7 @@ const ClosingRows = (props) => {
   );
 
   return recordsToDisplay.map((item, i) => (
-    <TableRow key={`tr-${i}`}>
+    <TableRow key={`tr-${i}`} className={item.status}>
       <TableCell key={`tdIcon-${i}`}>
         <ClosingIcon key={`icon-{i}`} type={item.status} size="small" />
       </TableCell>
