@@ -10,7 +10,9 @@ const ClosingHeaders = (props) => {
     <TableHead>
       <TableRow>
         <TableHeadCell key="BlankHeader" className="no-sort"></TableHeadCell>
-        <TableHeadCell key="StatusHeader">Status</TableHeadCell>
+        <TableHeadCell key="StatusHeader" className="order-by">
+          Status
+        </TableHeadCell>
         <TableHeadCell key="AgencyHeader">Agency/Program</TableHeadCell>
         <TableHeadCell key="InformationHeader">Information</TableHeadCell>
       </TableRow>
