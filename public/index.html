@@ -35,35 +35,21 @@
     
     <script>
       window.closings = {
-        programHeader: `<h2>Agency and Program Closings</h2>`,
-        informationHeader: `<h2>Real-Time Storm Information</h2>`,
+        programHeader: "<h2>" + "Agency and Program Closings" + "</h2>",
+        informationHeader: "<h2>" + "Real-Time Storm Information" + "</h2>",
         informationAbout:
-          ` <ul>
-              <li>
-                The
-                <a
-                  title="Learn more about the Bureau of Highways Snow Center."
-                  href="http://www.baltimorecountymd.gov/snowfighter"
-                >
-                  Bureau of Highways Snow Center
-                </a>
-                is manned 24-hours-a-day during storms. The Snow
-                Center&nbsp;coordinates between&nbsp;plow crews, emergency
-                services and the community. The number at the Highways Snow
-                Center is&nbsp;410-887-3560.
-              </li>
-              <li>
-                The County's
-                <a
-                  title="View road closures."
-                  href="https://dev.baltimorecountymd.gov/departments/publicworks/roadclosures/index.html"
-                >
-                  Road Closures
-                </a>
-                application lists roads currently closed due to repairs,
-                accidents, weather or other hazards.
-              </li>
-            </ul>`,
+           "<ul>" +
+              "<li>" +
+                "The" +
+                "<a title='Learn more about the Bureau of Highways Snow Center.' href='http://www.baltimorecountymd.gov/snowfighter'>Bureau of Highways Snow Center</a>"+
+                "is manned 24-hours-a-day during storms. The Snow Center&nbsp;coordinates between&nbsp;plow crews, emergency services and the community. The number at the Highways Snow Center is&nbsp;410-887-3560." +
+              "</li>" +
+              "<li>" +
+                "The County's" + 
+                "<a title='View road closures.'' href='https://dev.baltimorecountymd.gov/departments/publicworks/roadclosures/index.html'>Road Closures</a>" + 
+                "application lists roads currently closed due to repairs, accidents, weather or other hazards." + 
+              "</li>" +
+           "</ul>",
       };
     </script>
  
@@ -86,10 +72,32 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://kit.fontawesome.com/2475edd293.js"></script>
 
-    <script src="https://dev.baltimorecountymd.gov/sebin/f/x/jquery.dataTables.js"></script>
-    <script src="https://dev.baltimorecountymd.gov/sebin/f/h/dataTables.responsive.js"></script>
-    <script src="https://dev.baltimorecountymd.gov/sebin/l/s/dotgov-responsivetable.min.js"></script>
+   
     <script src="https://dev.baltimorecountymd.gov/sebin/z/m/dotgov-site.min.js"></script>
+
+    <script>
+      function dynamicallyLoadScriptDotgovResponsivetablePlugins() {
+        var head = document.head;
+        var script = document.createElement("script"); // create a script DOM node
+        script.src =
+          "https:dev.baltimorecountymd.gov/sebin/j/v/dotgov-responsivetable-plugins.min.js"; // set its src to the provided URL
+
+        head.appendChild(script);
+      }
+
+      dynamicallyLoadScriptDotgovResponsivetablePlugins();
+    </script>
+    <script>
+      function dynamicallyLoadScriptDotgovResponsivetable() {
+        var head = document.head;
+        var script = document.createElement("script"); // create a script DOM node
+        script.src = "https:dev.baltimorecountymd.gov/sebin/l/s/dotgov-responsivetable.min.js"; // set its src to the provided URL
+
+        head.appendChild(script);
+      }
+
+      dynamicallyLoadScriptDotgovResponsivetable();
+    </script>
 
   </body>
  
