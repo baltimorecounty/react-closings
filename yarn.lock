@@ -1004,9 +1004,9 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@baltimorecounty/dotgov-components@^1.0.26":
-  version "1.0.26"
-  resolved "https://registry.yarnpkg.com/@baltimorecounty/dotgov-components/-/dotgov-components-1.0.26.tgz#fa91f884a62093ba58f113a46f1c0a2d9190a3a3"
+"@baltimorecounty/dotgov-components@^1.0.37":
+  version "1.0.40"
+  resolved "https://registry.yarnpkg.com/@baltimorecounty/dotgov-components/-/dotgov-components-1.0.40.tgz#c8d24cf2b6c42750d449fe9a7f340ae1eb95a01f"
   dependencies:
     "@baltimorecounty/javascript-utilities" "^1.0.7"
     classnames "^2.2.6"
@@ -2184,9 +2184,9 @@ axe-core@^4.0.2:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.1.1.tgz#70a7855888e287f7add66002211a423937063eaf"
 
-axios@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
   dependencies:
     follow-redirects "^1.10.0"
 
@@ -8791,8 +8791,8 @@ sshpk@^1.7.0:
     tweetnacl "~0.14.0"
 
 ssri@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.1.tgz#2a3c41b28dd45b62b63676ecb74001265ae9edd8"
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.2.tgz#157939134f20464e7301ddba3e90ffa8f7728ac5"
   dependencies:
     figgy-pudding "^3.5.1"
 
