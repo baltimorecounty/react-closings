@@ -8,7 +8,7 @@ const ClosingIcon = (props) => {
       cancelled: "fa-times",
       closed: "fa-times",
       external: "fa-external-link",
-      seewebsite: "fa-external-link",
+      see_website: "fa-external-link",
       modified: "fa-exclamation-triangle",
       open: "fa-check",
       operating: "fa-check",
@@ -26,7 +26,12 @@ const ClosingIcon = (props) => {
   };
 
   var newType = type.toLowerCase().replace(" ", "");
+
   newType = iconClasses.icon[type] ? type : "modified";
+
+  if (newType === "see_website" || newType === "external") {
+    newType = "seewebsite";
+  }
 
   return (
     <i
